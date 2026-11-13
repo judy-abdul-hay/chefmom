@@ -2,7 +2,8 @@ import{ useState } from "react";
 import { Link } from "react-router-dom";
 import DishCard from "./Dishcard.jsx";
 import { menuItems } from "../data/MenuData.js";    
-export default function Menu() {
+
+function Menu() {
     const [search, setSearch] = useState("");
     const [category, setCategory] = useState("All");
     const show = menuItems.filter((dish) => 
@@ -51,3 +52,4 @@ export default function Menu() {
         </main>
     );
 }
+export default Menu;

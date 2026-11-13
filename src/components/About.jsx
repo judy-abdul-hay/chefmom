@@ -1,4 +1,4 @@
-export default function About() {
+ function About() {
   return (
     <main className="container page">
       <h1 className="page-title">About Chef Mom</h1>
@@ -16,3 +16,4 @@ export default function About() {
     </main>
   );
 }
+export default About;
